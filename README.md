@@ -12,5 +12,8 @@ In this project I will analyze the Walmart Stores Sales dataset. Walmart Stores 
 
 
 ### The ```agg()``` Function
-- The ```.agg()``` method allows you to apply your own custom functions to a DataFrame, as well as apply functions to more than one column of a DataFrame at once, making your aggregations super-efficient.
+- The ```.agg()``` method allows us to apply our own custom functions to a DataFrame, as well as apply functions to more than one column of a DataFrame at once, making the aggregations super-efficient.
 - The ```.agg()``` method makes it easy to compute multiple statistics on multiple columns, all in just one line of code.
+
+### Cumulative statistics
+- Cumulative statistics can also be helpful in tracking summary statistics over time.
