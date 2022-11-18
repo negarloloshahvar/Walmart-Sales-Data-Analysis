@@ -6,4 +6,5 @@ In this project I will analyze the Walmart Stores Sales dataset. Walmart Stores 
 
 * Summary Statistics
 
-Summary Statistics summarize many numbers in one statistic. e.g. mean, median, minimum, maximum, and standard deviation. Calculating summary statistics allows you to get a better sense of your data, even if there's a lot of it.
+Summary Statistics summarize many numbers in one statistic. e.g. mean, median, minimum, maximum, and standard deviation. Calculating summary statistics allows you to get a better sense of your data, even if there's a lot of it. 
+By taking a closer look at the summary statistics of the walmart dataset we obtain that the mean weekly sales amount is almost double the median weekly sales amount! This can tell us that there are a few very high sales weeks that are making the mean so much higher than the median.
