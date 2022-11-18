@@ -17,3 +17,11 @@ In this project I will analyze the Walmart Stores Sales dataset. Walmart Stores 
 
 ### Cumulative statistics
 - Cumulative statistics can also be helpful in tracking summary statistics over time.
+  - ```cumsum()```
+  - ```cummax()```
+  - ```cummin()```
+
+### Dropping duplicates
+- Removing duplicates is an essential skill to get accurate counts because often, you don't want to count the same thing multiple times.
+- We can remove duplicates by using the following method: ```df.drop_duplicates(subset='column name')```
+- We also can pass a list to the subset argument.
