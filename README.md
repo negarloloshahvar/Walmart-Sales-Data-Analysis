@@ -61,7 +61,7 @@ sales_proportion = sales_by_type / sales['weekly_sales'].sum()
 - Pivot tables are another way to do the same thing as a group-by-then-summarize.
 
 
-The .pivot_table() method has several useful arguments, including fill_value and margins.
+The ```.pivot_table()``` method has several useful arguments, including fill_value and margins.
 
 - ```fill_value``` replaces missing values with a real value (known as imputation).
 - ```margins``` is a shortcut for when you pivoted by two variables, but also wanted to pivot by each of those variables separately: it gives the row and column totals of the pivot table contents.
