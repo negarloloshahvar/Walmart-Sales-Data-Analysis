@@ -56,4 +56,12 @@ sales_proportion = sales_by_type / sales['weekly_sales'].sum()
 ```
 
 ### Pivoting on one variable
-- Pivot tables are the standard way of aggregating data in spreadsheets. In pandas, pivot tables are essentially just another way of performing grouped calculations. - - That is, the ```.pivot_table()``` method is just an alternative to ```.groupby()```.
+- Pivot tables are the standard way of aggregating data in spreadsheets. In pandas, pivot tables are essentially just another way of performing grouped calculations.
+- That is, the ```.pivot_table()``` method is just an alternative to ```.groupby()```.
+- Pivot tables are another way to do the same thing as a group-by-then-summarize.
+
+
+The .pivot_table() method has several useful arguments, including fill_value and margins.
+
+- ```fill_value``` replaces missing values with a real value (known as imputation).
+- ```margins``` is a shortcut for when you pivoted by two variables, but also wanted to pivot by each of those variables separately: it gives the row and column totals of the pivot table contents.
