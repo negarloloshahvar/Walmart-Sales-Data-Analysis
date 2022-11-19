@@ -34,3 +34,16 @@ In this project I will analyze the Walmart Stores Sales dataset. Walmart Stores 
 
 ### Grouped Summary Statistics
 - we can use ```.groupby()``` to calculate Summary Statistics just for specific groups.
+- this method calculates the desired result with fewer lines of code:
+**Without using .groupby()**
+
+``` sales_all = sales['weekly_sales'].sum()
+
+sales_A = sales[sales['type'] == 'A']['weekly_sales'].sum()
+sales_B = sales[sales['type'] == 'B']['weekly_sales'].sum()
+sales_C = sales[sales['type'] == 'C']['weekly_sales'].sum()
+
+sales_proportion = [sales_A, sales_B, sales_C] / sales_all
+print(sales_proportion)```
+
+**using .groupby()**
