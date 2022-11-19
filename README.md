@@ -31,3 +31,6 @@ In this project I will analyze the Walmart Stores Sales dataset. Walmart Stores 
 - We do this with the help of ```.value_counts('column name')``` method.
 - We can also use ```.value_counts('column name', sort= True)``` to sort the resulting column.
 - We can also use ```.value_counts('column name', normalize= True)``` to view the proportion of each cell.
+
+### Grouped Summary Statistics
+- we can use ```.groupby()``` to calculate Summary Statistics just for specific groups.
