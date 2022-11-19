@@ -25,3 +25,9 @@ In this project I will analyze the Walmart Stores Sales dataset. Walmart Stores 
 - Removing duplicates is an essential skill to get accurate counts because often, you don't want to count the same thing multiple times.
 - We can remove duplicates by using the following method: ```df.drop_duplicates(subset='column name')```
 - We also can pass a list to the subset argument.
+
+### Counting categorical variables
+- Counting is a great way to get an overview of the data and to spot curiosities that we might not notice otherwise.
+- We do this with the help of ```.value_counts('column name')``` method.
+- We can also use ```.value_counts('column name', sort= True)``` to sort the resulting column.
+- We can also use ```.value_counts('column name', normalize= True)``` to view the proportion of each cell.
