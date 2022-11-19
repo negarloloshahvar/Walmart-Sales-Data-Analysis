@@ -35,7 +35,8 @@ In this project I will analyze the Walmart Stores Sales dataset. Walmart Stores 
 ### Grouped Summary Statistics
 - we can use ```.groupby()``` to calculate Summary Statistics just for specific groups.
 - this method calculates the desired result with fewer lines of code:
-**Without using .groupby()**
+
+**Without using ```.groupby()```**
 
 ```
 sales_all = sales['weekly_sales'].sum()
@@ -48,9 +49,11 @@ sales_proportion = [sales_A, sales_B, sales_C] / sales_all
 
 ```
 
-**using .groupby()**
+**using ```.groupby()```**
 ```
 sales_by_type = sales.groupby('type')['weekly_sales'].sum()
 sales_proportion = sales_by_type / sales['weekly_sales'].sum()
 ```
 
+### Pivoting on one variable
+- Pivot tables are the standard way of aggregating data in spreadsheets. In pandas, pivot tables are essentially just another way of performing grouped calculations. - - That is, the ```.pivot_table()``` method is just an alternative to ```.groupby()```.
